@@ -1,0 +1,39 @@
+#contato{
+    background-color: rgb(246, 194, 92);
+    font-size: 20px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    display: flex;
+    color: rgb(26, 40, 118);
+    gap: 30px;
+}
+
+#menu li a{
+    text-decoration: none;
+ 
+}
+#menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    position: relative;
+    bottom: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+    color: black;
+}
+
+#menu li a:hover{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+#logo img{
+    margin-top: 10px;
+}
