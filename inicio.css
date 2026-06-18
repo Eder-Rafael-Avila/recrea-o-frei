@@ -33,6 +33,8 @@ header {
     justify-content: start;
     align-items: top;
 
+    position: sticky;
+
     width: 100%;
     height: 180px;
 }
@@ -55,7 +57,6 @@ header {
 
 .title {
     font-size: 13px;
-    margin-left: 45px;
     margin-top: 10px;
     width: 100%;
     text-align: start;
@@ -80,10 +81,15 @@ header {
     color: #2E6C7B;
 }
 
+.active-page {
+    border-bottom: 4px solid #2E6C7B;
+    color: #2E6C7B;
+}
+
 #meio {
     display: flex;
     width: 100%;
-    height: 500px; 
+    height: 400px; 
     background-color: rgb(40, 86, 172);
     color: white;
 }
@@ -100,18 +106,175 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+
     padding: 20px;
     text-align: center;
+}
+
+#text-meio h1 {
+    font-size: 40px;
+}
+
+#text-meio > button {
+    display: flex;
+    gap: 5px;
+
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.356);
+}
+
+#text-meio > button > div {
+    width: 30px;
+}
+
+#text-meio > button:hover {
+    background-color: #d6d6d6;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.767);
+    font-size: 15.5px;
+    transition-duration: 0.2s;
 }
 
 #Historia {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    background-color: rgb(210, 227, 247)    ;
+    background: linear-gradient(90deg, transparent, #D2E3F7, transparent);
+    margin: 30px;
+    padding: 5px;
 }
 
-#numeros {
-    background-color: rgb(92, 134, 189);
+.container-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    background-color: #5C86BD;
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.card-hist-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: #03437E;
+    color: white;
+
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #273a52a2;
+}
+
+.card-hist-numeros > h2 {
+    font-size: 35px;
+}
+
+#card-unico {
+    margin-bottom: 90px;
+}
+
+.imagem-numeros {
+    width: 100px;
+}
+
+/* Cursos */
+
+.cursos {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.amarelo {
+    background-color: #EBBB34;
+
+    width: 95%;
+    padding: 50px 30px;
+    margin: auto;
+}
+
+.amarelo h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.amarelo p {
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.container-cursos {
+    display: flex;
+    justify-content: space-around;
     
+    margin-top: 50px;
+}
+
+.card-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.541);
+}
+
+.card-cursos h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-cursos a {
+    background-color: #03437E;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.card-cursos a:hover {
+    font-size: 16.5px;
+    transition-duration: 0.1s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+}
+
+.icone-cursos {
+    width: 60px;
+}
+
+/* Admnistração */
+
+.container-adm {
+    background-color: grey;
+
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;  
+}
+
+.background-img {
+    background: blue url(imagens/adm-background.jpg) no-repeat center center;
+    background-size: cover;
+
+    width: 30%;
+    height: 100%;
 }
