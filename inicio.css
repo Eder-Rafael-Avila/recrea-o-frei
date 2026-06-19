@@ -16,6 +16,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -263,12 +267,15 @@ header {
 
 /* Admnistração */
 
-.container-adm {
+.container-detalhes {
+    display: flex;
+
     background-color: grey;
 
-    margin-top: 30px;
-    width: 100%;
+    margin: 100px auto;
+    width: 93%;
     height: 600px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
 }
 
 .background-img {
@@ -277,4 +284,203 @@ header {
 
     width: 30%;
     height: 100%;
+}
+
+/* ADMNISTRAÇÃO E GERAL */
+
+.informacoes {
+    flex: 1;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+}
+
+.informacoes .titulo-informacoes {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #EBBB34;
+    padding-bottom: 10px;
+}
+
+.informacoes .amarelo-adm {
+    color: #EBBB34;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.informacoes p {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.info-ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.info-ul li {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.informacoes::-webkit-scrollbar {
+    width: 8px;
+}
+
+.informacoes::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.yellow-bar::-webkit-scrollbar-thumb {
+    background: #EBBB34;
+    border-radius: 10px;
+}
+
+/* INFORMÁTICA */
+
+.info {
+    background: black url(imagens/info-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.azul {
+    color: #03437E;
+}
+
+.blue-bar::-webkit-scrollbar-thumb {
+    background: #03437E;
+}
+
+
+/* COMUNICAÇÃO VISUAL */
+
+.cv {
+    background: purple url(imagens/cv-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.roxo {
+    color: purple;
+}
+
+.purple-bar::-webkit-scrollbar-thumb {
+    background: purple;
+}
+
+/* ROBÓTICA */
+
+.robotica {
+    background: red url(imagens/robotica-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.black-bar::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/* inscrição */
+.inscricao {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    max-width: 1000px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.35);
+}
+
+.botao h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.botao a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: #2563eb;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.botao a:hover {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* footer */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+
+    margin-top: 60px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.social a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    background-color: #374151;
+
+    transition: 0.3s;
+}
+
+.social a:hover {
+    background-color: #2563eb;
+}
+
+.social span {
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social img {
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #d1d5db;
 }
